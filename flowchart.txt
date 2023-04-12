@@ -1,0 +1,44 @@
+Notebook
+----------
+1. Importing the packages
+2. Exploring the dataset - License Plate Detection Data
+3. Image Processing
+	- resizing the image
+	- converting the color bgr to rgb
+	- converting the color bgr to gray
+	- finding the contours based on edges
+4. Drawing the contours
+5. Detecting the License Plate
+	- Finding the distance
+	- find the index of coordinate 
+	- assign index to previous and next coordinate
+	- Finding the angle of rotation
+	- Finding the contours 
+6. Find the characters in the result images
+	- segmenting the characters
+	- make border to white
+	- Estimation of characters
+7. Building the Model using 
+	- CNN and YoloV3 Weighs
+	- CNN and YoloV4 Weighs
+8. Predicting the License Plate Number
+	- Predicting the output
+	- showing the result
+YoloV5
+----------
+9. Installing the packages required for yolov5 in Colab
+10. Processing the Data based on yolov5 model
+11. Building the model in colab
+	- YOLOV5
+12. Training the model
+13. Building the model with YOLOv5
+Flask Framework
+----------------
+14. Flask Framework with Sqlite for signup and signin
+15. User gives input as Image or Video
+16. The given input preprocessed and with trained model is used for detecting the license plate 
+	- CNN with YoloV4
+	- YoloV5
+17. The segmented each object and put bounding box 
+18. Extracting the segment character using tesseract OCR
+19. Final outcome is displayed

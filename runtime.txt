@@ -1,0 +1,5 @@
+python3.8.8
+
+Run notebook.ipynb file in anaconda prompt and YOLOV5NOTEBOOK.ipynb 
+file in google colab and download the weighs file from it and place
+it project folder for detection.

@@ -1,0 +1,41 @@
+##Notebook
+tensorflow==2.3.1
+keras==2.4.1
+numpy==1.19.5
+pandas==0.25.3
+seaborn==0.11.1
+matplotlib==3.4.3
+scikit-learn==1.0.2
+pickleshare==0.7.5
+tqdm==4.36.1
+joblib==0.13.2
+protobuf==3.20.0
+h5py==2.10.0
+torch==1.13.1
+torchvision==0.14.1
+Flask-Cors==3.0.10
+paddle-bfloat==0.1.7
+paddleocr==2.0.1
+paddlepaddle==2.3.2
+#Pillow==6.2.0#install separately to avoid conflict error
+opencv-python==4.1.1.26
+opencv-contrib-python==4.1.1.26
+
+##Flask Framework
+#gunicorn==20.1.0
+
+Flask==1.1.1
+Jinja2==2.10.3
+Markdown==3.4.1
+#MarkupSafe==2.0.1#install separately to avoid conflict error
+#Werkzeug==0.16.0#install separately to avoid conflict error
+itsdangerous==1.1.0
+glob2==0.7
+db-sqlite3==0.0.1
+
+
+##Run yolov5 folder codes in googlecolab
+####If Jupyter NOtebook is not working then install this packages
+
+#pip install --upgrade jupyterhub
+#pip install --upgrade --user nbconvert

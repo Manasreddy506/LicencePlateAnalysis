@@ -1,0 +1,540 @@
+2022-10-27 14:03:56,085:INFO:clientApp.py:Image loaded
+2022-10-27 14:04:01,355:ERROR:Detector.py:Failed to intialize Detector object : 
+No module named 'utils.dataloaders'
+Traceback (most recent call last):
+  File "/home/user/Desktop/Videos/number/test/Detector.py", line 21, in __init__
+    self.model = torch.hub.load('ultralytics/yolov5',"custom", path='my_model/best.pt')
+  File "/home/user/anaconda3/envs/test/lib/python3.7/site-packages/torch/hub.py", line 339, in load
+    model = _load_local(repo_or_dir, model, *args, **kwargs)
+  File "/home/user/anaconda3/envs/test/lib/python3.7/site-packages/torch/hub.py", line 368, in _load_local
+    model = entry(*args, **kwargs)
+  File "/home/user/.cache/torch/hub/ultralytics_yolov5_master/hubconf.py", line 78, in custom
+    return _create(path, autoshape=autoshape, verbose=_verbose, device=device)
+  File "/home/user/.cache/torch/hub/ultralytics_yolov5_master/hubconf.py", line 31, in _create
+    from models.common import AutoShape, DetectMultiBackend
+  File "/home/user/.cache/torch/hub/ultralytics_yolov5_master/models/common.py", line 24, in <module>
+    from utils.dataloaders import exif_transpose, letterbox
+ModuleNotFoundError: No module named 'utils.dataloaders'
+2022-10-27 14:04:01,400:ERROR:clientApp.py:Failed to initialize App Object : 
+Failed to intialize Detector object
+Traceback (most recent call last):
+  File "/home/user/Desktop/Videos/number/test/Detector.py", line 21, in __init__
+    self.model = torch.hub.load('ultralytics/yolov5',"custom", path='my_model/best.pt')
+  File "/home/user/anaconda3/envs/test/lib/python3.7/site-packages/torch/hub.py", line 339, in load
+    model = _load_local(repo_or_dir, model, *args, **kwargs)
+  File "/home/user/anaconda3/envs/test/lib/python3.7/site-packages/torch/hub.py", line 368, in _load_local
+    model = entry(*args, **kwargs)
+  File "/home/user/.cache/torch/hub/ultralytics_yolov5_master/hubconf.py", line 78, in custom
+    return _create(path, autoshape=autoshape, verbose=_verbose, device=device)
+  File "/home/user/.cache/torch/hub/ultralytics_yolov5_master/hubconf.py", line 31, in _create
+    from models.common import AutoShape, DetectMultiBackend
+  File "/home/user/.cache/torch/hub/ultralytics_yolov5_master/models/common.py", line 24, in <module>
+    from utils.dataloaders import exif_transpose, letterbox
+ModuleNotFoundError: No module named 'utils.dataloaders'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "app.py", line 19, in __init__
+    self.obj_detect = Detector()
+  File "/home/user/Desktop/Videos/number/test/Detector.py", line 28, in __init__
+    raise Exception("Failed to intialize Detector object")
+Exception: Failed to intialize Detector object
+2022-10-27 14:41:58,780:INFO:clientApp.py:Image loaded
+2022-10-27 14:41:59,791:ERROR:Detector.py:Failed to intialize Detector object : 
+cannot import name 'TryExcept' from 'utils' (C:\Users\Tru Projects\Desktop\ramesh\zip\Alternative Collaborative Learning for Character Recognition in Low-Resolution Images\testing\utils\__init__.py)
+Traceback (most recent call last):
+  File "C:\Users\Tru Projects\Desktop\ramesh\zip\Alternative Collaborative Learning for Character Recognition in Low-Resolution Images\testing\Detector.py", line 21, in __init__
+    self.model = torch.hub.load('ultralytics/yolov5',"custom", path='best.pt')
+  File "C:\Users\Tru Projects\AppData\Roaming\Python\Python38\site-packages\torch\hub.py", line 404, in load
+    model = _load_local(repo_or_dir, model, *args, **kwargs)
+  File "C:\Users\Tru Projects\AppData\Roaming\Python\Python38\site-packages\torch\hub.py", line 433, in _load_local
+    model = entry(*args, **kwargs)
+  File "C:\Users\Tru Projects/.cache\torch\hub\ultralytics_yolov5_master\hubconf.py", line 83, in custom
+    return _create(path, autoshape=autoshape, verbose=_verbose, device=device)
+  File "C:\Users\Tru Projects/.cache\torch\hub\ultralytics_yolov5_master\hubconf.py", line 33, in _create
+    from models.common import AutoShape, DetectMultiBackend
+  File "C:\Users\Tru Projects/.cache\torch\hub\ultralytics_yolov5_master\models\common.py", line 28, in <module>
+    from utils import TryExcept
+ImportError: cannot import name 'TryExcept' from 'utils' (C:\Users\Tru Projects\Desktop\ramesh\zip\Alternative Collaborative Learning for Character Recognition in Low-Resolution Images\testing\utils\__init__.py)
+2022-10-27 14:41:59,792:ERROR:clientApp.py:Failed to initialize App Object : 
+Failed to intialize Detector object
+Traceback (most recent call last):
+  File "C:\Users\Tru Projects\Desktop\ramesh\zip\Alternative Collaborative Learning for Character Recognition in Low-Resolution Images\testing\Detector.py", line 21, in __init__
+    self.model = torch.hub.load('ultralytics/yolov5',"custom", path='best.pt')
+  File "C:\Users\Tru Projects\AppData\Roaming\Python\Python38\site-packages\torch\hub.py", line 404, in load
+    model = _load_local(repo_or_dir, model, *args, **kwargs)
+  File "C:\Users\Tru Projects\AppData\Roaming\Python\Python38\site-packages\torch\hub.py", line 433, in _load_local
+    model = entry(*args, **kwargs)
+  File "C:\Users\Tru Projects/.cache\torch\hub\ultralytics_yolov5_master\hubconf.py", line 83, in custom
+    return _create(path, autoshape=autoshape, verbose=_verbose, device=device)
+  File "C:\Users\Tru Projects/.cache\torch\hub\ultralytics_yolov5_master\hubconf.py", line 33, in _create
+    from models.common import AutoShape, DetectMultiBackend
+  File "C:\Users\Tru Projects/.cache\torch\hub\ultralytics_yolov5_master\models\common.py", line 28, in <module>
+    from utils import TryExcept
+ImportError: cannot import name 'TryExcept' from 'utils' (C:\Users\Tru Projects\Desktop\ramesh\zip\Alternative Collaborative Learning for Character Recognition in Low-Resolution Images\testing\utils\__init__.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "app.py", line 19, in __init__
+    self.obj_detect = Detector()
+  File "C:\Users\Tru Projects\Desktop\ramesh\zip\Alternative Collaborative Learning for Character Recognition in Low-Resolution Images\testing\Detector.py", line 28, in __init__
+    raise Exception("Failed to intialize Detector object")
+Exception: Failed to intialize Detector object
+2022-10-27 14:44:52,995:INFO:clientApp.py:Image loaded
+2022-10-27 14:44:53,966:ERROR:Detector.py:Failed to intialize Detector object : 
+cannot import name 'TryExcept' from 'utils' (C:\Users\Tru Projects\Desktop\ramesh\zip\Alternative Collaborative Learning for Character Recognition in Low-Resolution Images\testing\utils\__init__.py)
+Traceback (most recent call last):
+  File "C:\Users\Tru Projects\Desktop\ramesh\zip\Alternative Collaborative Learning for Character Recognition in Low-Resolution Images\testing\Detector.py", line 21, in __init__
+    self.model = torch.hub.load('ultralytics/yolov5',"custom", path='my_model/best.pt')
+  File "C:\Users\Tru Projects\AppData\Roaming\Python\Python38\site-packages\torch\hub.py", line 404, in load
+    model = _load_local(repo_or_dir, model, *args, **kwargs)
+  File "C:\Users\Tru Projects\AppData\Roaming\Python\Python38\site-packages\torch\hub.py", line 433, in _load_local
+    model = entry(*args, **kwargs)
+  File "C:\Users\Tru Projects/.cache\torch\hub\ultralytics_yolov5_master\hubconf.py", line 83, in custom
+    return _create(path, autoshape=autoshape, verbose=_verbose, device=device)
+  File "C:\Users\Tru Projects/.cache\torch\hub\ultralytics_yolov5_master\hubconf.py", line 33, in _create
+    from models.common import AutoShape, DetectMultiBackend
+  File "C:\Users\Tru Projects/.cache\torch\hub\ultralytics_yolov5_master\models\common.py", line 28, in <module>
+    from utils import TryExcept
+ImportError: cannot import name 'TryExcept' from 'utils' (C:\Users\Tru Projects\Desktop\ramesh\zip\Alternative Collaborative Learning for Character Recognition in Low-Resolution Images\testing\utils\__init__.py)
+2022-10-27 14:44:53,967:ERROR:clientApp.py:Failed to initialize App Object : 
+Failed to intialize Detector object
+Traceback (most recent call last):
+  File "C:\Users\Tru Projects\Desktop\ramesh\zip\Alternative Collaborative Learning for Character Recognition in Low-Resolution Images\testing\Detector.py", line 21, in __init__
+    self.model = torch.hub.load('ultralytics/yolov5',"custom", path='my_model/best.pt')
+  File "C:\Users\Tru Projects\AppData\Roaming\Python\Python38\site-packages\torch\hub.py", line 404, in load
+    model = _load_local(repo_or_dir, model, *args, **kwargs)
+  File "C:\Users\Tru Projects\AppData\Roaming\Python\Python38\site-packages\torch\hub.py", line 433, in _load_local
+    model = entry(*args, **kwargs)
+  File "C:\Users\Tru Projects/.cache\torch\hub\ultralytics_yolov5_master\hubconf.py", line 83, in custom
+    return _create(path, autoshape=autoshape, verbose=_verbose, device=device)
+  File "C:\Users\Tru Projects/.cache\torch\hub\ultralytics_yolov5_master\hubconf.py", line 33, in _create
+    from models.common import AutoShape, DetectMultiBackend
+  File "C:\Users\Tru Projects/.cache\torch\hub\ultralytics_yolov5_master\models\common.py", line 28, in <module>
+    from utils import TryExcept
+ImportError: cannot import name 'TryExcept' from 'utils' (C:\Users\Tru Projects\Desktop\ramesh\zip\Alternative Collaborative Learning for Character Recognition in Low-Resolution Images\testing\utils\__init__.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "app.py", line 19, in __init__
+    self.obj_detect = Detector()
+  File "C:\Users\Tru Projects\Desktop\ramesh\zip\Alternative Collaborative Learning for Character Recognition in Low-Resolution Images\testing\Detector.py", line 28, in __init__
+    raise Exception("Failed to intialize Detector object")
+Exception: Failed to intialize Detector object
+2022-10-27 14:48:31,553:INFO:clientApp.py:Image loaded
+2022-10-27 14:48:51,583:INFO:Detector.py:Detector object initialized
+2022-10-27 14:48:51,583:INFO:clientApp.py:ClientApp object initialized
+2022-10-27 14:48:51,584:INFO:utils.py:Image Decoded Succesfully
+2022-10-27 14:48:51,587:INFO:utils.py:Image Saved Sucessfully
+2022-10-27 14:48:53,720:INFO:Detector.py:Output Image Saved
+2022-10-27 14:48:53,724:INFO:utils.py:Image encoded successfully
+2022-10-27 14:48:53,725:INFO:Detector.py:Inference Completed
+2022-10-27 15:12:50,796:INFO:clientApp.py:Image loaded
+2022-10-27 15:12:52,027:INFO:Detector.py:Detector object initialized
+2022-10-27 15:12:52,027:INFO:clientApp.py:ClientApp object initialized
+2022-10-27 15:12:52,028:INFO:utils.py:Image Decoded Succesfully
+2022-10-27 15:12:52,031:INFO:utils.py:Image Saved Sucessfully
+2022-10-27 15:12:52,437:INFO:Detector.py:Output Image Saved
+2022-10-27 15:12:52,441:INFO:utils.py:Image encoded successfully
+2022-10-27 15:12:52,441:INFO:Detector.py:Inference Completed
+2022-10-27 15:13:10,627:INFO:clientApp.py:Image loaded
+2022-10-27 15:13:11,858:INFO:Detector.py:Detector object initialized
+2022-10-27 15:13:11,858:INFO:clientApp.py:ClientApp object initialized
+2022-10-27 15:13:11,859:INFO:utils.py:Image Decoded Succesfully
+2022-10-27 15:13:11,861:INFO:utils.py:Image Saved Sucessfully
+2022-10-27 15:13:13,388:INFO:Detector.py:Output Image Saved
+2022-10-27 15:13:13,392:INFO:utils.py:Image encoded successfully
+2022-10-27 15:13:13,393:INFO:Detector.py:Inference Completed
+2022-10-27 15:13:25,305:INFO:clientApp.py:Image loaded
+2022-10-27 15:13:26,479:INFO:Detector.py:Detector object initialized
+2022-10-27 15:13:26,480:INFO:clientApp.py:ClientApp object initialized
+2022-10-27 15:13:26,481:INFO:utils.py:Image Decoded Succesfully
+2022-10-27 15:13:26,482:INFO:utils.py:Image Saved Sucessfully
+2022-10-27 15:13:26,880:INFO:Detector.py:Output Image Saved
+2022-10-27 15:13:26,885:INFO:utils.py:Image encoded successfully
+2022-10-27 15:13:26,885:INFO:Detector.py:Inference Completed
+2022-10-27 15:13:32,242:INFO:clientApp.py:Image loaded
+2022-10-27 15:13:33,367:INFO:Detector.py:Detector object initialized
+2022-10-27 15:13:33,367:INFO:clientApp.py:ClientApp object initialized
+2022-10-27 15:13:33,370:INFO:utils.py:Image Decoded Succesfully
+2022-10-27 15:13:33,371:INFO:utils.py:Image Saved Sucessfully
+2022-10-27 15:13:34,829:INFO:Detector.py:Output Image Saved
+2022-10-27 15:13:34,835:INFO:utils.py:Image encoded successfully
+2022-10-27 15:13:34,836:INFO:Detector.py:Inference Completed
+2022-10-27 15:13:40,989:INFO:clientApp.py:Image loaded
+2022-10-27 15:13:42,175:INFO:Detector.py:Detector object initialized
+2022-10-27 15:13:42,176:INFO:clientApp.py:ClientApp object initialized
+2022-10-27 15:13:42,177:INFO:utils.py:Image Decoded Succesfully
+2022-10-27 15:13:42,180:INFO:utils.py:Image Saved Sucessfully
+2022-10-27 15:13:43,236:INFO:Detector.py:Output Image Saved
+2022-10-27 15:13:43,240:INFO:utils.py:Image encoded successfully
+2022-10-27 15:13:43,241:INFO:Detector.py:Inference Completed
+2022-10-27 15:13:55,045:INFO:clientApp.py:Image loaded
+2022-10-27 15:13:56,243:INFO:Detector.py:Detector object initialized
+2022-10-27 15:13:56,244:INFO:clientApp.py:ClientApp object initialized
+2022-10-27 15:13:56,245:INFO:utils.py:Image Decoded Succesfully
+2022-10-27 15:13:56,246:INFO:utils.py:Image Saved Sucessfully
+2022-10-27 15:13:57,508:INFO:Detector.py:Output Image Saved
+2022-10-27 15:13:57,512:INFO:utils.py:Image encoded successfully
+2022-10-27 15:13:57,513:INFO:Detector.py:Inference Completed
+2022-10-27 15:14:05,435:INFO:clientApp.py:Image loaded
+2022-10-27 15:14:06,568:INFO:Detector.py:Detector object initialized
+2022-10-27 15:14:06,569:INFO:clientApp.py:ClientApp object initialized
+2022-10-27 15:14:06,571:INFO:utils.py:Image Decoded Succesfully
+2022-10-27 15:14:06,572:INFO:utils.py:Image Saved Sucessfully
+2022-10-27 15:14:09,734:INFO:Detector.py:Output Image Saved
+2022-10-27 15:14:09,739:INFO:utils.py:Image encoded successfully
+2022-10-27 15:14:09,740:INFO:Detector.py:Inference Completed
+2022-10-27 15:14:40,813:INFO:clientApp.py:Image loaded
+2022-10-27 15:14:41,960:INFO:Detector.py:Detector object initialized
+2022-10-27 15:14:41,961:INFO:clientApp.py:ClientApp object initialized
+2022-10-27 15:14:41,964:INFO:utils.py:Image Decoded Succesfully
+2022-10-27 15:14:41,967:INFO:utils.py:Image Saved Sucessfully
+2022-10-27 15:14:43,903:INFO:Detector.py:Output Image Saved
+2022-10-27 15:14:43,907:INFO:utils.py:Image encoded successfully
+2022-10-27 15:14:43,908:INFO:Detector.py:Inference Completed
+2022-10-27 15:14:53,991:INFO:clientApp.py:Image loaded
+2022-10-27 15:14:55,214:INFO:Detector.py:Detector object initialized
+2022-10-27 15:14:55,215:INFO:clientApp.py:ClientApp object initialized
+2022-10-27 15:14:55,216:INFO:utils.py:Image Decoded Succesfully
+2022-10-27 15:14:55,217:INFO:utils.py:Image Saved Sucessfully
+2022-10-27 15:14:57,575:INFO:Detector.py:Output Image Saved
+2022-10-27 15:14:57,579:INFO:utils.py:Image encoded successfully
+2022-10-27 15:14:57,580:INFO:Detector.py:Inference Completed
+2022-10-27 15:17:05,717:INFO:clientApp.py:Image loaded
+2022-10-27 15:17:06,902:INFO:Detector.py:Detector object initialized
+2022-10-27 15:17:06,903:INFO:clientApp.py:ClientApp object initialized
+2022-10-27 15:17:06,903:INFO:utils.py:Image Decoded Succesfully
+2022-10-27 15:17:06,906:INFO:utils.py:Image Saved Sucessfully
+2022-10-27 15:17:09,255:INFO:Detector.py:Output Image Saved
+2022-10-27 15:17:09,260:INFO:utils.py:Image encoded successfully
+2022-10-27 15:17:09,260:INFO:Detector.py:Inference Completed
+2022-10-27 15:17:37,402:INFO:clientApp.py:Image loaded
+2022-10-27 15:17:39,052:INFO:Detector.py:Detector object initialized
+2022-10-27 15:17:39,053:INFO:clientApp.py:ClientApp object initialized
+2022-10-27 15:17:39,054:INFO:utils.py:Image Decoded Succesfully
+2022-10-27 15:17:39,058:INFO:utils.py:Image Saved Sucessfully
+2022-10-27 15:17:41,321:INFO:Detector.py:Output Image Saved
+2022-10-27 15:17:41,326:INFO:utils.py:Image encoded successfully
+2022-10-27 15:17:41,327:INFO:Detector.py:Inference Completed
+2022-10-27 15:18:06,211:INFO:clientApp.py:Image loaded
+2022-10-27 15:18:07,340:INFO:Detector.py:Detector object initialized
+2022-10-27 15:18:07,340:INFO:clientApp.py:ClientApp object initialized
+2022-10-27 15:18:07,360:INFO:utils.py:Image Decoded Succesfully
+2022-10-27 15:18:07,363:INFO:utils.py:Image Saved Sucessfully
+2022-10-27 15:18:09,279:INFO:Detector.py:Output Image Saved
+2022-10-27 15:18:09,283:INFO:utils.py:Image encoded successfully
+2022-10-27 15:18:09,295:INFO:Detector.py:Inference Completed
+2022-10-27 15:18:19,005:INFO:clientApp.py:Image loaded
+2022-10-27 15:18:20,188:INFO:Detector.py:Detector object initialized
+2022-10-27 15:18:20,189:INFO:clientApp.py:ClientApp object initialized
+2022-10-27 15:18:20,191:INFO:utils.py:Image Decoded Succesfully
+2022-10-27 15:18:20,193:INFO:utils.py:Image Saved Sucessfully
+2022-10-27 15:18:22,663:INFO:Detector.py:Output Image Saved
+2022-10-27 15:18:22,669:INFO:utils.py:Image encoded successfully
+2022-10-27 15:18:22,670:INFO:Detector.py:Inference Completed
+2022-10-27 17:34:59,361:INFO:clientApp.py:Image loaded
+2022-10-27 17:35:01,800:INFO:Detector.py:Detector object initialized
+2022-10-27 17:35:01,801:INFO:clientApp.py:ClientApp object initialized
+2022-10-27 17:35:01,803:INFO:utils.py:Image Decoded Succesfully
+2022-10-27 17:35:01,804:INFO:utils.py:Image Saved Sucessfully
+2022-10-27 17:35:04,398:INFO:Detector.py:Output Image Saved
+2022-10-27 17:35:04,401:INFO:utils.py:Image encoded successfully
+2022-10-27 17:35:04,402:INFO:Detector.py:Inference Completed
+2022-10-27 17:35:45,433:INFO:clientApp.py:Image loaded
+2022-10-27 17:35:46,618:INFO:Detector.py:Detector object initialized
+2022-10-27 17:35:46,618:INFO:clientApp.py:ClientApp object initialized
+2022-10-27 17:35:46,620:INFO:utils.py:Image Decoded Succesfully
+2022-10-27 17:35:46,621:INFO:utils.py:Image Saved Sucessfully
+2022-10-27 17:35:49,265:INFO:Detector.py:Output Image Saved
+2022-10-27 17:35:49,269:INFO:utils.py:Image encoded successfully
+2022-10-27 17:35:49,269:INFO:Detector.py:Inference Completed
+2022-10-27 17:36:29,903:INFO:clientApp.py:Image loaded
+2022-10-27 17:36:32,370:INFO:Detector.py:Detector object initialized
+2022-10-27 17:36:32,371:INFO:clientApp.py:ClientApp object initialized
+2022-10-27 17:36:32,373:INFO:utils.py:Image Decoded Succesfully
+2022-10-27 17:36:32,379:INFO:utils.py:Image Saved Sucessfully
+2022-10-27 17:36:34,024:INFO:Detector.py:Output Image Saved
+2022-10-27 17:36:34,030:INFO:utils.py:Image encoded successfully
+2022-10-27 17:36:34,030:INFO:Detector.py:Inference Completed
+2022-10-27 17:41:05,071:INFO:clientApp.py:Image loaded
+2022-10-27 17:41:07,951:INFO:Detector.py:Detector object initialized
+2022-10-27 17:41:07,952:INFO:clientApp.py:ClientApp object initialized
+2022-10-27 17:41:07,953:INFO:utils.py:Image Decoded Succesfully
+2022-10-27 17:41:07,958:INFO:utils.py:Image Saved Sucessfully
+2022-10-27 17:41:10,496:INFO:Detector.py:Output Image Saved
+2022-10-27 17:41:10,499:INFO:utils.py:Image encoded successfully
+2022-10-27 17:41:10,500:INFO:Detector.py:Inference Completed
+2022-10-27 17:59:52,218:INFO:clientApp.py:Image loaded
+2022-10-27 17:59:52,887:ERROR:Detector.py:Failed to intialize Detector object : 
+[Errno 2] No such file or directory: 'my_model\\best.pt'. Cache may be out of date, try `force_reload=True` or see https://github.com/ultralytics/yolov5/issues/36 for help.
+Traceback (most recent call last):
+  File "C:\Users\Tru Projects/.cache\torch\hub\ultralytics_yolov5_master\hubconf.py", line 49, in _create
+    model = DetectMultiBackend(path, device=device, fuse=autoshape)  # detection model
+  File "C:\Users\Tru Projects/.cache\torch\hub\ultralytics_yolov5_master\models\common.py", line 345, in __init__
+    model = attempt_load(weights if isinstance(weights, list) else w, device=device, inplace=True, fuse=fuse)
+  File "C:\Users\Tru Projects/.cache\torch\hub\ultralytics_yolov5_master\models\experimental.py", line 79, in attempt_load
+    ckpt = torch.load(attempt_download(w), map_location='cpu')  # load
+  File "C:\Users\Tru Projects\AppData\Roaming\Python\Python38\site-packages\torch\serialization.py", line 699, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "C:\Users\Tru Projects\AppData\Roaming\Python\Python38\site-packages\torch\serialization.py", line 231, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "C:\Users\Tru Projects\AppData\Roaming\Python\Python38\site-packages\torch\serialization.py", line 212, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'my_model\\best.pt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Tru Projects/.cache\torch\hub\ultralytics_yolov5_master\hubconf.py", line 60, in _create
+    model = attempt_load(path, device=device, fuse=False)  # arbitrary model
+  File "C:\Users\Tru Projects/.cache\torch\hub\ultralytics_yolov5_master\models\experimental.py", line 79, in attempt_load
+    ckpt = torch.load(attempt_download(w), map_location='cpu')  # load
+  File "C:\Users\Tru Projects\AppData\Roaming\Python\Python38\site-packages\torch\serialization.py", line 699, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "C:\Users\Tru Projects\AppData\Roaming\Python\Python38\site-packages\torch\serialization.py", line 231, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "C:\Users\Tru Projects\AppData\Roaming\Python\Python38\site-packages\torch\serialization.py", line 212, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'my_model\\best.pt'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Tru Projects\Desktop\ramesh\zip\Alternative Collaborative Learning for Character Recognition in Low-Resolution Images\Detector.py", line 36, in __init__
+    self.model = torch.hub.load('ultralytics/yolov5',"custom", path='my_model/best.pt')
+  File "C:\Users\Tru Projects\AppData\Roaming\Python\Python38\site-packages\torch\hub.py", line 404, in load
+    model = _load_local(repo_or_dir, model, *args, **kwargs)
+  File "C:\Users\Tru Projects\AppData\Roaming\Python\Python38\site-packages\torch\hub.py", line 433, in _load_local
+    model = entry(*args, **kwargs)
+  File "C:\Users\Tru Projects/.cache\torch\hub\ultralytics_yolov5_master\hubconf.py", line 83, in custom
+    return _create(path, autoshape=autoshape, verbose=_verbose, device=device)
+  File "C:\Users\Tru Projects/.cache\torch\hub\ultralytics_yolov5_master\hubconf.py", line 78, in _create
+    raise Exception(s) from e
+Exception: [Errno 2] No such file or directory: 'my_model\\best.pt'. Cache may be out of date, try `force_reload=True` or see https://github.com/ultralytics/yolov5/issues/36 for help.
+2022-10-27 17:59:52,893:ERROR:clientApp.py:Failed to initialize App Object : 
+Failed to intialize Detector object
+Traceback (most recent call last):
+  File "C:\Users\Tru Projects/.cache\torch\hub\ultralytics_yolov5_master\hubconf.py", line 49, in _create
+    model = DetectMultiBackend(path, device=device, fuse=autoshape)  # detection model
+  File "C:\Users\Tru Projects/.cache\torch\hub\ultralytics_yolov5_master\models\common.py", line 345, in __init__
+    model = attempt_load(weights if isinstance(weights, list) else w, device=device, inplace=True, fuse=fuse)
+  File "C:\Users\Tru Projects/.cache\torch\hub\ultralytics_yolov5_master\models\experimental.py", line 79, in attempt_load
+    ckpt = torch.load(attempt_download(w), map_location='cpu')  # load
+  File "C:\Users\Tru Projects\AppData\Roaming\Python\Python38\site-packages\torch\serialization.py", line 699, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "C:\Users\Tru Projects\AppData\Roaming\Python\Python38\site-packages\torch\serialization.py", line 231, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "C:\Users\Tru Projects\AppData\Roaming\Python\Python38\site-packages\torch\serialization.py", line 212, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'my_model\\best.pt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Tru Projects/.cache\torch\hub\ultralytics_yolov5_master\hubconf.py", line 60, in _create
+    model = attempt_load(path, device=device, fuse=False)  # arbitrary model
+  File "C:\Users\Tru Projects/.cache\torch\hub\ultralytics_yolov5_master\models\experimental.py", line 79, in attempt_load
+    ckpt = torch.load(attempt_download(w), map_location='cpu')  # load
+  File "C:\Users\Tru Projects\AppData\Roaming\Python\Python38\site-packages\torch\serialization.py", line 699, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "C:\Users\Tru Projects\AppData\Roaming\Python\Python38\site-packages\torch\serialization.py", line 231, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "C:\Users\Tru Projects\AppData\Roaming\Python\Python38\site-packages\torch\serialization.py", line 212, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'my_model\\best.pt'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Tru Projects\Desktop\ramesh\zip\Alternative Collaborative Learning for Character Recognition in Low-Resolution Images\Detector.py", line 36, in __init__
+    self.model = torch.hub.load('ultralytics/yolov5',"custom", path='my_model/best.pt')
+  File "C:\Users\Tru Projects\AppData\Roaming\Python\Python38\site-packages\torch\hub.py", line 404, in load
+    model = _load_local(repo_or_dir, model, *args, **kwargs)
+  File "C:\Users\Tru Projects\AppData\Roaming\Python\Python38\site-packages\torch\hub.py", line 433, in _load_local
+    model = entry(*args, **kwargs)
+  File "C:\Users\Tru Projects/.cache\torch\hub\ultralytics_yolov5_master\hubconf.py", line 83, in custom
+    return _create(path, autoshape=autoshape, verbose=_verbose, device=device)
+  File "C:\Users\Tru Projects/.cache\torch\hub\ultralytics_yolov5_master\hubconf.py", line 78, in _create
+    raise Exception(s) from e
+Exception: [Errno 2] No such file or directory: 'my_model\\best.pt'. Cache may be out of date, try `force_reload=True` or see https://github.com/ultralytics/yolov5/issues/36 for help.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "app.py", line 36, in __init__
+    self.obj_detect = Detector()
+  File "C:\Users\Tru Projects\Desktop\ramesh\zip\Alternative Collaborative Learning for Character Recognition in Low-Resolution Images\Detector.py", line 43, in __init__
+    raise Exception("Failed to intialize Detector object")
+Exception: Failed to intialize Detector object
+2022-10-27 18:01:12,997:INFO:clientApp.py:Image loaded
+2022-10-27 18:01:14,258:INFO:Detector.py:Detector object initialized
+2022-10-27 18:01:14,258:INFO:clientApp.py:ClientApp object initialized
+2022-10-27 18:01:14,262:INFO:utils.py:Image Decoded Succesfully
+2022-10-27 18:01:14,262:INFO:utils.py:Image Saved Sucessfully
+2022-10-27 18:01:16,505:INFO:Detector.py:Output Image Saved
+2022-10-27 18:01:16,509:INFO:utils.py:Image encoded successfully
+2022-10-27 18:01:16,510:INFO:Detector.py:Inference Completed
+2022-10-27 18:02:21,962:INFO:clientApp.py:Image loaded
+2022-10-27 18:02:23,177:INFO:Detector.py:Detector object initialized
+2022-10-27 18:02:23,178:INFO:clientApp.py:ClientApp object initialized
+2022-10-27 18:02:23,179:INFO:utils.py:Image Decoded Succesfully
+2022-10-27 18:02:23,182:INFO:utils.py:Image Saved Sucessfully
+2022-10-27 18:02:25,189:INFO:Detector.py:Output Image Saved
+2022-10-27 18:02:25,193:INFO:utils.py:Image encoded successfully
+2022-10-27 18:02:25,193:INFO:Detector.py:Inference Completed
+2022-10-27 18:02:39,620:INFO:clientApp.py:Image loaded
+2022-10-27 18:02:40,800:INFO:Detector.py:Detector object initialized
+2022-10-27 18:02:40,800:INFO:clientApp.py:ClientApp object initialized
+2022-10-27 18:02:40,802:INFO:utils.py:Image Decoded Succesfully
+2022-10-27 18:02:40,806:INFO:utils.py:Image Saved Sucessfully
+2022-10-27 18:02:42,894:INFO:Detector.py:Output Image Saved
+2022-10-27 18:02:42,898:INFO:utils.py:Image encoded successfully
+2022-10-27 18:02:42,899:INFO:Detector.py:Inference Completed
+2022-10-27 18:03:01,235:INFO:clientApp.py:Image loaded
+2022-10-27 18:03:02,407:INFO:Detector.py:Detector object initialized
+2022-10-27 18:03:02,407:INFO:clientApp.py:ClientApp object initialized
+2022-10-27 18:03:02,409:INFO:utils.py:Image Decoded Succesfully
+2022-10-27 18:03:02,412:INFO:utils.py:Image Saved Sucessfully
+2022-10-27 18:03:05,017:INFO:Detector.py:Output Image Saved
+2022-10-27 18:03:05,021:INFO:utils.py:Image encoded successfully
+2022-10-27 18:03:05,021:INFO:Detector.py:Inference Completed
+2022-10-27 18:03:18,848:INFO:clientApp.py:Image loaded
+2022-10-27 18:03:20,412:INFO:Detector.py:Detector object initialized
+2022-10-27 18:03:20,413:INFO:clientApp.py:ClientApp object initialized
+2022-10-27 18:03:20,414:INFO:utils.py:Image Decoded Succesfully
+2022-10-27 18:03:20,416:INFO:utils.py:Image Saved Sucessfully
+2022-10-27 18:03:21,795:INFO:Detector.py:Output Image Saved
+2022-10-27 18:03:21,799:INFO:utils.py:Image encoded successfully
+2022-10-27 18:03:21,800:INFO:Detector.py:Inference Completed
+2022-10-27 18:03:30,737:INFO:clientApp.py:Image loaded
+2022-10-27 18:03:32,324:INFO:Detector.py:Detector object initialized
+2022-10-27 18:03:32,324:INFO:clientApp.py:ClientApp object initialized
+2022-10-27 18:03:32,326:INFO:utils.py:Image Decoded Succesfully
+2022-10-27 18:03:32,328:INFO:utils.py:Image Saved Sucessfully
+2022-10-27 18:03:33,664:INFO:Detector.py:Output Image Saved
+2022-10-27 18:03:33,668:INFO:utils.py:Image encoded successfully
+2022-10-27 18:03:33,669:INFO:Detector.py:Inference Completed
+2022-10-27 18:03:39,078:INFO:clientApp.py:Image loaded
+2022-10-27 18:03:40,316:INFO:Detector.py:Detector object initialized
+2022-10-27 18:03:40,317:INFO:clientApp.py:ClientApp object initialized
+2022-10-27 18:03:40,318:INFO:utils.py:Image Decoded Succesfully
+2022-10-27 18:03:40,320:INFO:utils.py:Image Saved Sucessfully
+2022-10-27 18:03:42,334:INFO:Detector.py:Output Image Saved
+2022-10-27 18:03:42,338:INFO:utils.py:Image encoded successfully
+2022-10-27 18:03:42,339:INFO:Detector.py:Inference Completed
+2022-10-27 18:03:52,248:INFO:clientApp.py:Image loaded
+2022-10-27 18:03:53,840:INFO:Detector.py:Detector object initialized
+2022-10-27 18:03:53,840:INFO:clientApp.py:ClientApp object initialized
+2022-10-27 18:03:53,843:INFO:utils.py:Image Decoded Succesfully
+2022-10-27 18:03:53,844:INFO:utils.py:Image Saved Sucessfully
+2022-10-27 18:03:55,444:INFO:Detector.py:Output Image Saved
+2022-10-27 18:03:55,448:INFO:utils.py:Image encoded successfully
+2022-10-27 18:03:55,449:INFO:Detector.py:Inference Completed
+2022-10-27 18:05:52,208:INFO:clientApp.py:Image loaded
+2022-10-27 18:05:53,391:INFO:Detector.py:Detector object initialized
+2022-10-27 18:05:53,391:INFO:clientApp.py:ClientApp object initialized
+2022-10-27 18:05:53,395:INFO:utils.py:Image Decoded Succesfully
+2022-10-27 18:05:53,396:INFO:utils.py:Image Saved Sucessfully
+2022-10-27 18:05:55,452:INFO:Detector.py:Output Image Saved
+2022-10-27 18:05:55,456:INFO:utils.py:Image encoded successfully
+2022-10-27 18:05:55,457:INFO:Detector.py:Inference Completed
+2023-01-21 16:57:08,975:INFO:clientApp.py:Image loaded
+2023-01-21 16:57:27,395:INFO:Detector.py:Detector object initialized
+2023-01-21 16:57:27,400:INFO:clientApp.py:ClientApp object initialized
+2023-01-21 16:57:27,401:INFO:utils.py:Image Decoded Succesfully
+2023-01-21 16:57:27,406:INFO:utils.py:Image Saved Sucessfully
+2023-01-21 16:57:28,844:INFO:Detector.py:Output Image Saved
+2023-01-21 16:57:28,844:INFO:utils.py:Image encoded successfully
+2023-01-21 16:57:28,844:INFO:Detector.py:Inference Completed
+2023-01-21 16:57:50,098:INFO:clientApp.py:Image loaded
+2023-01-21 16:57:53,581:INFO:Detector.py:Detector object initialized
+2023-01-21 16:57:53,581:INFO:clientApp.py:ClientApp object initialized
+2023-01-21 16:57:53,582:INFO:utils.py:Image Decoded Succesfully
+2023-01-21 16:57:53,583:INFO:utils.py:Image Saved Sucessfully
+2023-01-21 16:57:54,939:INFO:Detector.py:Output Image Saved
+2023-01-21 16:57:54,939:INFO:utils.py:Image encoded successfully
+2023-01-21 16:57:54,940:INFO:Detector.py:Inference Completed
+2023-02-08 17:18:56,487:INFO:clientApp.py:Image loaded
+2023-02-08 17:19:35,163:INFO:Detector.py:Detector object initialized
+2023-02-08 17:19:35,163:INFO:clientApp.py:ClientApp object initialized
+2023-02-08 17:19:35,166:INFO:utils.py:Image Decoded Succesfully
+2023-02-08 17:19:35,166:INFO:utils.py:Image Saved Sucessfully
+2023-02-08 17:19:41,000:INFO:Detector.py:Output Image Saved
+2023-02-08 17:19:41,000:INFO:utils.py:Image encoded successfully
+2023-02-08 17:19:41,000:INFO:Detector.py:Inference Completed
+2023-02-08 17:31:42,795:INFO:clientApp.py:Image loaded
+2023-02-08 17:31:44,516:INFO:Detector.py:Detector object initialized
+2023-02-08 17:31:44,516:INFO:clientApp.py:ClientApp object initialized
+2023-02-08 17:31:44,516:INFO:utils.py:Image Decoded Succesfully
+2023-02-08 17:31:44,516:INFO:utils.py:Image Saved Sucessfully
+2023-02-08 17:31:47,653:INFO:Detector.py:Output Image Saved
+2023-02-08 17:31:47,653:INFO:utils.py:Image encoded successfully
+2023-02-08 17:31:47,653:INFO:Detector.py:Inference Completed
+2023-03-17 21:58:51,473:INFO:clientApp.py:Image loaded
+2023-03-17 21:58:58,378:INFO:Detector.py:Detector object initialized
+2023-03-17 21:58:58,378:INFO:clientApp.py:ClientApp object initialized
+2023-03-17 21:58:58,378:INFO:utils.py:Image Decoded Succesfully
+2023-03-17 21:58:58,384:INFO:utils.py:Image Saved Sucessfully
+2023-03-17 21:59:08,893:INFO:Detector.py:Output Image Saved
+2023-03-17 21:59:08,893:INFO:utils.py:Image encoded successfully
+2023-03-17 21:59:08,908:INFO:Detector.py:Inference Completed
+2023-03-17 22:00:09,662:INFO:clientApp.py:Image loaded
+2023-03-17 22:00:14,108:INFO:Detector.py:Detector object initialized
+2023-03-17 22:00:14,108:INFO:clientApp.py:ClientApp object initialized
+2023-03-17 22:00:14,125:INFO:utils.py:Image Decoded Succesfully
+2023-03-17 22:00:14,125:INFO:utils.py:Image Saved Sucessfully
+2023-03-17 22:00:17,172:INFO:Detector.py:Output Image Saved
+2023-03-17 22:00:17,172:INFO:utils.py:Image encoded successfully
+2023-03-17 22:00:17,172:INFO:Detector.py:Inference Completed
+2023-03-18 10:52:37,034:INFO:clientApp.py:Image loaded
+2023-03-18 10:52:40,951:INFO:Detector.py:Detector object initialized
+2023-03-18 10:52:40,951:INFO:clientApp.py:ClientApp object initialized
+2023-03-18 10:52:40,958:INFO:utils.py:Image Decoded Succesfully
+2023-03-18 10:52:40,958:INFO:utils.py:Image Saved Sucessfully
+2023-03-18 10:52:46,470:INFO:Detector.py:Output Image Saved
+2023-03-18 10:52:46,470:INFO:utils.py:Image encoded successfully
+2023-03-18 10:52:46,470:INFO:Detector.py:Inference Completed
+2023-03-18 11:00:30,822:INFO:clientApp.py:Image loaded
+2023-03-18 11:00:34,690:INFO:Detector.py:Detector object initialized
+2023-03-18 11:00:34,690:INFO:clientApp.py:ClientApp object initialized
+2023-03-18 11:00:34,690:INFO:utils.py:Image Decoded Succesfully
+2023-03-18 11:00:34,690:INFO:utils.py:Image Saved Sucessfully
+2023-03-18 11:00:41,021:INFO:Detector.py:Output Image Saved
+2023-03-18 11:00:41,021:INFO:utils.py:Image encoded successfully
+2023-03-18 11:00:41,021:INFO:Detector.py:Inference Completed
+2023-03-18 11:27:23,095:INFO:clientApp.py:Image loaded
+2023-03-18 11:27:26,529:INFO:Detector.py:Detector object initialized
+2023-03-18 11:27:26,529:INFO:clientApp.py:ClientApp object initialized
+2023-03-18 11:27:26,538:INFO:utils.py:Image Decoded Succesfully
+2023-03-18 11:27:26,545:INFO:utils.py:Image Saved Sucessfully
+2023-03-18 11:27:37,298:INFO:Detector.py:Output Image Saved
+2023-03-18 11:27:37,298:INFO:utils.py:Image encoded successfully
+2023-03-18 11:27:37,298:INFO:Detector.py:Inference Completed
+2023-03-19 18:03:25,432:INFO:clientApp.py:Image loaded
+2023-03-19 18:03:27,194:INFO:Detector.py:Detector object initialized
+2023-03-19 18:03:27,195:INFO:clientApp.py:ClientApp object initialized
+2023-03-19 18:03:27,196:INFO:utils.py:Image Decoded Succesfully
+2023-03-19 18:03:27,196:INFO:utils.py:Image Saved Sucessfully
+2023-03-19 18:03:36,637:INFO:Detector.py:Output Image Saved
+2023-03-19 18:03:36,637:INFO:utils.py:Image encoded successfully
+2023-03-19 18:03:36,637:INFO:Detector.py:Inference Completed
+2023-03-19 18:05:18,896:INFO:clientApp.py:Image loaded
+2023-03-19 18:05:20,946:INFO:Detector.py:Detector object initialized
+2023-03-19 18:05:20,946:INFO:clientApp.py:ClientApp object initialized
+2023-03-19 18:05:20,946:INFO:utils.py:Image Decoded Succesfully
+2023-03-19 18:05:20,947:INFO:utils.py:Image Saved Sucessfully
+2023-03-19 18:05:24,135:INFO:Detector.py:Output Image Saved
+2023-03-19 18:05:24,135:INFO:utils.py:Image encoded successfully
+2023-03-19 18:05:24,135:INFO:Detector.py:Inference Completed
+2023-03-19 18:05:43,917:INFO:clientApp.py:Image loaded
+2023-03-19 18:05:45,516:INFO:Detector.py:Detector object initialized
+2023-03-19 18:05:45,516:INFO:clientApp.py:ClientApp object initialized
+2023-03-19 18:05:45,516:INFO:utils.py:Image Decoded Succesfully
+2023-03-19 18:05:45,516:INFO:utils.py:Image Saved Sucessfully
+2023-03-19 18:05:47,449:INFO:Detector.py:Output Image Saved
+2023-03-19 18:05:47,449:INFO:utils.py:Image encoded successfully
+2023-03-19 18:05:47,449:INFO:Detector.py:Inference Completed
